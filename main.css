@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Heebo:wght@300&family=Karla:ital@1&family=Prompt:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    font-family:'Baloo Bhai 2';
+    background:#24384d;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:3rem;
+    
+}
+h3{
+    color:#fff;
+    font-size:2rem;
+    padding-bottom:1.5rem;
+    letter-spacing:1px;
+}
+h5{
+    color:#fff;
+    font-size:1rem;
+    padding-bottom:2.5rem;
+   
+}
+
+.card{
+    background-color:white;
+    width:600px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    text-align:left;
+    padding:30px;
+    
+    border-radius:3px;
+    box-shadow:0px 3px 20px rgba(0,0,0,0.1);
+    position:relative;
+   
+    
+}
+
+.img-card
+{
+    width:100px;
+    height:100px;
+    margin-bottom:10px;
+}
+
+    .img-card img{
+        background-position:center;
+        background-size:cover;
+    }
+
+    .review
+    {
+        padding-bottom:1rem;
+
+    }
+    .prevBtn,.nextBtn
+    {
+        color:#FF5733;
+        font-size:3rem;
+        width:50px;
+        height:45px;
+        line-height:45px;
+        max-height:30px;
+        text-decoration:none;
+        text-align:center;
+        transition: all 0.3s ease;
+
+        
+    }
+
+    .prevBtn{
+
+position:absolute;
+top:10%;
+right:14%;
+
+    }
+
+    .nextBtn{
+        position:absolute;
+        top:10%;
+        right:5%;
+    }
+
+    .btn:hover{
+   
+        background-color:#FF5733;
+        color:white;
+    }
+
+    @media only screen and (max-width:624px)
+    {
+        .card{
+            width:90%;
+            padding-bottom:20px;
+        }
+    }
